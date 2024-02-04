@@ -22,6 +22,9 @@ use App\Http\Controllers\TransportationController;
 
 
 
+
+
+
 Route::group(['middleware' => ['auth']], function () {
 
     Route::resource('allbookings',\App\Http\Controllers\BookingController::class);
